@@ -1,15 +1,4 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -19,6 +8,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
+  --theme-color: #ff2020;
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #364d59; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #52565e; /* Color for headings, subheadings and title throughout the website */
@@ -67,13 +57,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--theme-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--theme-color), transparent 25%);
   text-decoration: none;
 }
 
@@ -124,7 +114,7 @@ h6 {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
+  border: 3px solid var(--theme-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
 }
@@ -245,7 +235,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--accent-color);
+    background-color: var(--theme-color);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -380,12 +370,12 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: color-mix(in srgb, var(--theme-color), transparent 90%);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
+    background-color: var(--theme-color);
     color: var(--contrast-color);
   }
 
@@ -397,7 +387,7 @@ h6 {
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: var(--theme-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -513,8 +503,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--theme-color);
+  border-color: var(--theme-color);
 }
 
 .footer h4 {
@@ -557,7 +547,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .footer .footer-contact p {
@@ -597,7 +587,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: var(--theme-color) transparent var(--theme-color) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -624,7 +614,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -638,7 +628,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--theme-color), transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -745,7 +735,7 @@ section,
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   display: inline-block;
 }
 
@@ -803,7 +793,7 @@ section,
   display: block;
   width: 80px;
   height: 4px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   left: 0;
   right: 0;
   bottom: 0;
@@ -832,11 +822,11 @@ section,
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--theme-color);
 }
 
 .hero .info .btn-get-started:hover {
-  background: var(--accent-color);
+  background: var(--theme-color);
 }
 
 .hero .carousel {
@@ -945,7 +935,7 @@ section,
   display: block;
   width: 60px;
   height: 4px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   left: 0;
   bottom: 0;
 }
@@ -993,7 +983,7 @@ section,
 .get-started .php-email-form input[type=text]:focus,
 .get-started .php-email-form input[type=email]:focus,
 .get-started .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .get-started .php-email-form input[type=text]::placeholder,
@@ -1004,7 +994,7 @@ section,
 
 .get-started .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--theme-color);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1012,7 +1002,7 @@ section,
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--theme-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -1123,16 +1113,16 @@ section,
 }
 
 .services .service-item:hover .icon:before {
-  background: var(--accent-color);
+  background: var(--theme-color);
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
   color: var(--heading-color);
 }
 
 .services .service-item:hover .readmore {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 /*--------------------------------------------------------------
@@ -1163,7 +1153,7 @@ section,
 
 .alt-services h3:after {
   content: "";
-  background: var(--accent-color);
+  background: var(--theme-color);
   position: absolute;
   display: block;
   width: 50px;
@@ -1177,7 +1167,7 @@ section,
 }
 
 .alt-services .icon-box i {
-  color: var(--accent-color);
+  color: var(--theme-color);
   background-color: var(--surface-color);
   display: flex;
   align-items: center;
@@ -1193,7 +1183,7 @@ section,
 }
 
 .alt-services .icon-box:hover i {
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   color: var(--contrast-color);
 }
 
@@ -1209,7 +1199,7 @@ section,
 }
 
 .alt-services .icon-box h4 a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .alt-services .icon-box p {
@@ -1257,14 +1247,14 @@ section,
 }
 
 .features .nav-link:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 .features .nav-link.active {
   background-color: var(--background-color);
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--theme-color);
+  border-color: var(--theme-color);
 }
 
 .features .tab-content {
@@ -1286,7 +1276,7 @@ section,
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   left: 0;
   bottom: 0;
 }
@@ -1303,7 +1293,7 @@ section,
 .features .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .features .tab-pane p:last-child {
@@ -1334,7 +1324,7 @@ section,
 
 .projects .portfolio-filters li:hover,
 .projects .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .projects .portfolio-filters li:first-child {
@@ -1377,7 +1367,7 @@ section,
   font-weight: 400;
   color: #ffffff;
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
 }
 
 .projects .portfolio-content .portfolio-info p {
@@ -1405,7 +1395,7 @@ section,
 
 .projects .portfolio-content .portfolio-info .preview-link:hover,
 .projects .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .projects .portfolio-content .portfolio-info .details-link {
@@ -1475,7 +1465,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  color: color-mix(in srgb, var(--theme-color), transparent 60%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1513,11 +1503,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--theme-color);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
 }
 
 @media (max-width: 767px) {
@@ -1558,7 +1548,7 @@ section,
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   color: var(--contrast-color);
   text-transform: uppercase;
   font-size: 13px;
@@ -1580,7 +1570,7 @@ section,
 
 .recent-blog-posts .post-item .meta i {
   font-size: 16px;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .recent-blog-posts .post-item .meta span {
@@ -1610,7 +1600,7 @@ section,
 
 .recent-blog-posts .post-item:hover .post-title,
 .recent-blog-posts .post-item:hover .readmore {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .recent-blog-posts .post-item:hover .post-img img {
@@ -1676,13 +1666,13 @@ section,
   font-size: 1.25rem;
   margin-right: 0.5rem;
   line-height: 1.2;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .about .watch-video i {
   font-size: 2rem;
   transition: 0.3s;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .about .watch-video a {
@@ -1693,7 +1683,7 @@ section,
 }
 
 .about .watch-video:hover a {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .about .about-img {
@@ -1730,7 +1720,7 @@ section,
 }
 
 .stats-counter .stats-item i {
-  color: var(--accent-color);
+  color: var(--theme-color);
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
@@ -1779,7 +1769,7 @@ section,
 }
 
 .alt-services-2 .icon-box i {
-  color: var(--accent-color);
+  color: var(--theme-color);
   margin-right: 15px;
   font-size: 24px;
   line-height: 1.2;
@@ -1844,7 +1834,7 @@ section,
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .team .member .member-info {
@@ -1899,7 +1889,7 @@ section,
 
 .features-cards ul li i {
   font-size: 16px;
-  color: var(--accent-color);
+  color: var(--theme-color);
   margin-right: 6px;
 }
 
@@ -1926,11 +1916,11 @@ section,
 .service-details .services-list a.active {
   color: var(--heading-color);
   font-weight: 700;
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .service-details .services-list a:hover {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .service-details .services-img {
@@ -1966,7 +1956,7 @@ section,
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 /*--------------------------------------------------------------
@@ -2026,7 +2016,7 @@ section,
 }
 
 .project-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
 }
 
 .project-details .portfolio-info h3 {
@@ -2043,7 +2033,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   left: 0;
   bottom: 0;
 }
@@ -2069,14 +2059,14 @@ section,
 
 .project-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--accent-color);
+  background: var(--theme-color);
   color: var(--contrast-color);
   border-radius: 50px;
   transition: 0.3s;
 }
 
 .project-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--theme-color), transparent 20%);
 }
 
 .project-details .portfolio-description h2 {
@@ -2119,7 +2109,7 @@ section,
 
 .project-details .portfolio-description .testimonial-item .quote-icon-left,
 .project-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, var(--theme-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
@@ -2158,7 +2148,7 @@ section,
 }
 
 .blog-posts .post-date {
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   color: var(--contrast-color);
   position: absolute;
   right: 0;
@@ -2183,7 +2173,7 @@ section,
 
 .blog-posts .meta i {
   font-size: 16px;
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .blog-posts .meta span {
@@ -2217,7 +2207,7 @@ section,
 
 .blog-posts article:hover .post-title,
 .blog-posts article:hover .readmore {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .blog-posts article:hover .post-img img {
@@ -2254,7 +2244,7 @@ section,
 
 .blog-pagination li a.active,
 .blog-pagination li a:hover {
-  background: var(--accent-color);
+  background: var(--theme-color);
   color: var(--contrast-color);
 }
 
@@ -2324,7 +2314,7 @@ section,
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2377,7 +2367,7 @@ section,
 }
 
 .blog-details .meta-bottom a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .blog-details .meta-bottom .cats {
@@ -2493,7 +2483,7 @@ section,
 }
 
 .blog-comments .comment h5 a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .blog-comments .comment h5 .reply {
@@ -2552,7 +2542,7 @@ section,
   color: var(--default-color);
   background-color: var(--surface-color);
   box-shadow: none;
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .comment-form form input::placeholder {
@@ -2572,7 +2562,7 @@ section,
 .comment-form form textarea:focus {
   color: var(--default-color);
   box-shadow: none;
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
   background-color: var(--surface-color);
 }
 
@@ -2588,13 +2578,13 @@ section,
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   color: var(--contrast-color);
 }
 
 .comment-form form .btn-primary:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--theme-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -2608,7 +2598,7 @@ section,
 
 .contact .info-item i {
   font-size: 20px;
-  color: var(--accent-color);
+  color: var(--theme-color);
   width: 56px;
   height: 56px;
   font-size: 24px;
@@ -2618,7 +2608,7 @@ section,
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
+  border: 2px dotted color-mix(in srgb, var(--theme-color), transparent 40%);
 }
 
 .contact .info-item h3 {
@@ -2662,7 +2652,7 @@ section,
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -2673,7 +2663,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--theme-color);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -2681,7 +2671,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--theme-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -2739,7 +2729,7 @@ section,
 }
 
 .search-widget form button {
-  background: var(--accent-color);
+  background: var(--theme-color);
   color: var(--contrast-color);
   position: absolute;
   top: 0;
@@ -2759,11 +2749,11 @@ section,
 }
 
 .search-widget form button:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--theme-color), transparent 20%);
 }
 
 .search-widget form:is(:focus-within) {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .categories-widget ul {
@@ -2786,7 +2776,7 @@ section,
 }
 
 .categories-widget ul a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .categories-widget ul a span {
@@ -2821,7 +2811,7 @@ section,
 }
 
 .recent-posts-widget .post-item h4 a:hover {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .recent-posts-widget .post-item time {
@@ -2856,9 +2846,9 @@ section,
 }
 
 .tags-widget ul a:hover {
-  background: var(--accent-color);
+  background: var(--theme-color);
   color: var(--contrast-color);
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--theme-color);
 }
 
 .tags-widget ul a span {
